@@ -3,7 +3,7 @@ package exemplos.solid.dip;
 public class DIPMain {
 
     public static void main(String[] args) {
-        System.out.println("OLA DIP");
+        System.out.println("OLA DIP!");
 
 
         // Criar as dependencias
