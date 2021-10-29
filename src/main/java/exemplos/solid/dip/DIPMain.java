@@ -5,7 +5,6 @@ public class DIPMain {
     public static void main(String[] args) {
         System.out.println("OLA DIP!");
 
-
         // Criar as dependencias
         Produto camisa = new Produto(100f, "Camisa");
         Cliente cliente = new Cliente();
