@@ -1,0 +1,49 @@
+Princípio da Responsabilidade Única
+
+Sabendo que uma classe NÃO coesa é uma classe que não para de crescer
+e sempre está aumentando sua complexidade com mais responsabilidades.
+
+Trabalharemos para transformar a classe Calculadora de Salário
+em uma classe que atenda o SRP, transformando esta classe para ela
+ter apenas UMA responsabilidade, ou seja, apenas UM motivo para mudar.
+
+Dica - Identificando responsabilidades:
+Para identificar uma responsabilidade, liste os cenários da classe (fazendo testes é uma boa maneira)
+e identifique se eles tem relação um com o outro.
+Se ao fazer (ou pedirem) a alteração em um e não for necessária alteração no outro,
+provavelmente temos duas responsabilidades pois teremos mais de um motivo para mudar a classe atual.
+
+Resolva os desafios abaixo:
+==============================================================================
+1 - Para facilitar a identificação das responsabilidades,
+faça os teste unitários para os cenários da classe Calculadora de Salário.
+
+==============================================================================
+2 - Identifique e escreva as responsabilidades da classe Calculadora de Salário
+(Escreva a lista aqui)
+
+==============================================================================
+3 - Para melhorar a leitura da classe,
+como também sua manutenção e reúso das regras menores que estão atreladas a ela:
+
+3.1 - Separe as responsabilidades em classes menores
+3.2 - Utilize estas classes na classe Calculadora de Salário
+
+==============================================================================
+4 - Teste as classes menores e remova os testes da classe Calculadora de Salário,
+melhorando a testabilidade de cada classe individual e também
+para identificar se o SRP de cada classe está sendo atendido.
+
+==============================================================================
+5 - Volte o foco para a classe Calculadora de Salário e identifique
+as responsabilidades que ela possui neste momento, após a refatoração.
+O código ainda pode estar feio na classe Calculadora, porém todas as classes, incluindo
+as novas criadas, já estão muito melhor alocadas com suas responsabilidades,
+reúso e manutenção mais adequadas.
+
+5.1 - Liste em forma de texto as classes criadas e suas responsabilidades.
+Exemplo:
+- ClasseX
+    1 - Calcular soma
+- ClasseY
+    2 - Calcular multiplicação
