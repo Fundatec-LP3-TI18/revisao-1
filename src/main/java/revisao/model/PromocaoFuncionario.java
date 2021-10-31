@@ -1,12 +1,13 @@
 package revisao.model;
 
-public class PromocaoFuncionario {
+public class PromocaoFuncionario implements PromocaoInterface {
 
-    public Double calcularPromocaoFuncionario(Double valorFinal) {
-        valorFinal = valorFinal - 10d;
-        valorFinal *= 10;
-        valorFinal *= 10;
-        valorFinal *= 10;
-        return valorFinal;
+    @Override
+    public Double calculaPromocao(Double valor) {
+        valor = valor - 10d;
+        valor *= 10;
+        valor *= 10;
+        valor *= 10;
+        return valor;
     }
 }

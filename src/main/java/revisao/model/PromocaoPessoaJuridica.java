@@ -1,8 +1,8 @@
 package revisao.model;
 
-public class PromocaoPessoaJuridica {
+public class PromocaoPessoaJuridica implements PromocaoInterface {
 
-    public double calcularPromocaoPessoaJuridica(Double valorFinal) {
+    public Double calculaPromocao(Double valorFinal) {
         return valorFinal * 0.20;
     }
 }
