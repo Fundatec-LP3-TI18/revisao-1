@@ -1,0 +1,35 @@
+Princípio da inversão de dependência
+
+Sabendo que uma classe instável, inchada e principalmente engessada,
+que fica impossibilitada de ser reutilizada e de ser testada,
+é uma classe com muitas depêndencias (acoplada à outras classes).
+
+Trabalharemos para transformar a classe Calculadora de Salário
+em uma classe que atenda o DIP, transformando esta classe para ela
+ter menos acoplamentos e também que preferencialmente fique acoplada à
+classes ABSTRATAS (ideias) e não classes CONCRETAS (classes com implementações).
+
+Dica - Identificando acoplamentos:
+Podemos facilmente identificar acoplamentos em classes
+sendo utilizadas em atributos da nossa classe atual, também olhando os parâmetros
+dos construtores e metodos porém, também podemos visualizar acoplamentos
+em classes sendo instanciadas no meio do código através do "new".
+
+Resolva os desafios abaixo:
+==============================================================================
+1 - Identifique e escreva os acoplamentos da classe Calculadora de Salário
+(Escreva a lista aqui)
+
+
+==============================================================================
+2 - Identifique uma abstração que possa ser criada para melhorar os acoplamentos
+da classe Calculadora de Salário. Não ganhando apenas isso, mas também
+flexibilidade sempre que for reutilizar esta família identificada.
+Crie uma interface (contrato) para implementar nas classes desta família.
+
+
+==============================================================================
+3 - Sabendo que as classes individuais da famílai estão testadas, garantindo
+seus comportamentos. Agora volte um pouco ao SRP da classe Calculadora,
+identifique suas novas responsabilidades e teste unicamente a classe Calculadora.
+Dica: Necessário usar mock.
