@@ -1,11 +1,5 @@
 package provaSRP;
 
-
-/* Esta classe:
-    Recebe uma classe funcionário, que tem um cargo e um salário base.
-    Retorna o salário líquido do funcionário
-*/
-
 import static provaSRP.TipoProduto.*;
 
 class ProcessoDeVendaOnline {
