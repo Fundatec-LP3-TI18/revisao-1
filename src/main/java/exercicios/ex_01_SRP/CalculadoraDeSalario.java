@@ -7,6 +7,10 @@ import static exercicios.ex_01_SRP.CARGO.*;
     Retorna o salário líquido do funcionário
 */
 
+// 1 - Calcular salario de desenvolvedor
+// 2 - Calcular salario de DBA e TESTER
+// 3 - Calcular salario cargo mil
+
 class CalculadoraDeSalario {
     public double calcula(Funcionario funcionario) {
 

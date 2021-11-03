@@ -1,0 +1,22 @@
+Princípio da Responsabilidade Única
+
+Resolva os desafios abaixo:
+==============================================================================
+Escrita: (0.5 ponto)
+1 - O que diz o Princípio da Responsabilidade Única? (Regra)
+...
+
+2 - Para que utilizamos o princípio da responsabilidade Única?
+...
+
+3 - Como podemos atingir o princípio da responsabilidade Única em uma classe
+que não está coesa?
+...
+
+==============================================================================
+Teórica: (1.5 ponto)
+1 - Faça os teste unitários para os cenários da classe ProcessoDeVendaOnline.
+
+2 - Utilize o princípio da Responsabilidade Única na classe ProcessoDeVendaOnline,
+completando todo o processo que segue para finalizar a refatoração. (Principalmente testes)
+(Não é necessária abstração)
