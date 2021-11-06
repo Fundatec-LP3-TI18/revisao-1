@@ -5,13 +5,22 @@ Resolva os desafios abaixo:
 Escrita: (0.5 ponto)
 1 - O que diz o Princípio da Responsabilidade Única? (Regra)
 ...
+Uma classe deve ter apenas UMA resposnabilidade
+    em outras palavras
+uma classe deve ter apenas UM motivo para mudar
 
 2 - Para que utilizamos o princípio da responsabilidade Única?
 ...
+Para deixar a classe mais coesa
+ela ter apenas uma reponsabilidade, tendo uma complexidade menor.
+Reuso de todas as classes
+Manutenção
+Testabilidade
 
 3 - Como podemos atingir o princípio da responsabilidade Única em uma classe
 que não está coesa?
 ...
+Indentificar as responsabilidades e separar em classes menores.
 
 ==============================================================================
 Pratica: (1.5 ponto)

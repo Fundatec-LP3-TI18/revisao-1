@@ -8,7 +8,7 @@ class ProcessoDeVendaOnline {
     public double calcula(Float valorTotal, TipoProduto tipoProduto) {
 
         if (SERVICOS.equals(tipoProduto)) {
-            return valorTotal * 0.8;
+            return valorTotal * 1.2;
         } else if (COMIDA.equals(tipoProduto)) {
             return dezPorcentoParaComida(valorTotal);
         } else if (IMPORTADO.equals(tipoProduto)) {
@@ -20,14 +20,14 @@ class ProcessoDeVendaOnline {
 
     private double calcularImpostoImportado(Float valorTotal) {
         if(valorTotal > 500) {
-            return (valorTotal * 0.6) + TAXA_FIXA_DE_IMPORTACAO;
+            return (valorTotal * 1.4) + TAXA_FIXA_DE_IMPORTACAO;
         } else {
-            return valorTotal * 0.7;
+            return valorTotal * 1.3;
         }
     }
 
     private double dezPorcentoParaComida(Float valorTotal) {
-        return valorTotal * 0.9;
+        return valorTotal * 1.1;
     }
 }
 
