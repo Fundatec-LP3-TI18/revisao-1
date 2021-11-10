@@ -30,7 +30,7 @@ se necessário, aplicar o SRP para, posteriormente, aplicar o DIP.
 utilize o princípio da Inversão de Dependência (DIP) na classe CalculadoraDeFrete.
 
 Dica: Não é necessária fábrica, ela será feita fora da classe em outro momento e em outra classe (cliente desta).
-! Foque apenas na peça em construçãom, ou seja, na classe CalculadoraDeFrete. !
+! Foque apenas na peça em construção, ou seja, na classe CalculadoraDeFrete. !
 
 3 - Faça os teste unitários para cada classe dentro do pacote 'calculosFrete'.
 

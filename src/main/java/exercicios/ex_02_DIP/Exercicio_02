@@ -29,7 +29,7 @@ Crie uma interface (contrato) para implementar nas classes desta família.
 
 
 ==============================================================================
-3 - Sabendo que as classes individuais da famílai estão testadas, garantindo
+3 - Sabendo que as classes individuais da família estão testadas, garantindo
 seus comportamentos. Agora volte um pouco ao SRP da classe Calculadora,
 identifique suas novas responsabilidades e teste unicamente a classe Calculadora.
 Dica: Necessário usar mock.

@@ -1,6 +1,6 @@
 package exercicios.ex_02_DIP.CalculosDeSalario;
 
-public class SalarioDesenvolvedor {
+public class CalculoSalarioDesenvolvedor {
     public double calcularSalarioDesenvolvedor(double valorFinal){
         if (valorFinal > 3000.0) {
             return valorFinal + (valorFinal * 0.2);
