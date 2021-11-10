@@ -1,0 +1,41 @@
+Dependency Inversion (DIP)
+Princípio da Inversão de Dependência
+
+Resolva os desafios abaixo:
+==============================================================================
+ESCRITA
+(0.5 ponto)
+
+1 - Identifique e escreva os acoplamentos, e seus tipos (concreta ou abstrata), da classe 'CalculadoradeFrete':
+...
+
+2 - O que diz o princípio da Inversão de Dependência? (Regra)
+...
+
+3 - Para que respeitamos o princípio da Inversão de Dependência? (Vantagens)
+...
+
+3 - Como podemos atingir o princípio da Inversão de Dependência em uma classe
+que está com acoplamentos ruins?
+...
+
+==============================================================================
+PRÁTICA
+(1.5 ponto)
+
+1 - Identifique pontos de melhoria na classe CalculadoraDeFrete,
+se necessário, aplicar o SRP para, posteriormente, aplicar o DIP.
+
+2 - Identifique pontos de abstrações e
+utilize o princípio da Inversão de Dependência (DIP) na classe CalculadoraDeFrete.
+
+Dica: Não é necessária fábrica, ela será feita fora da classe em outro momento e em outra classe (cliente desta).
+! Foque apenas na peça em construçãom, ou seja, na classe CalculadoraDeFrete. !
+
+3 - Faça os teste unitários para cada classe dentro do pacote 'calculosFrete'.
+
+===============================================================================
+EXTRA, entregar até a primeira aula da próxima semana:
+(0.5 ponto)
+
+1 - Faça o teste unitário da classe Calculadora De Frete, mockando a injeção de dependência utilizada no DIP.
