@@ -1,4 +1,5 @@
 Princípio da inversão de dependência
+Dependency Inversion (DIP)
 
 Sabendo que uma classe instável, inchada e principalmente engessada,
 que fica impossibilitada de ser reutilizada e de ser testada,
@@ -17,9 +18,13 @@ em classes sendo instanciadas no meio do código através do "new".
 
 Resolva os desafios abaixo:
 ==============================================================================
-1 - Identifique e escreva os acoplamentos da classe Calculadora de Salário
+1 - Identifique e escreva os acoplamentos da classe Calculadora de Salário e seus tipos
 (Escreva a lista aqui)
-
+- OutraClasse, concreta
+- Funcionario, concreta
+- CalculoSalarioDesenvolvedor, concreta
+- CalculoSalarioDbaeTester, concreta
+- CalculoSalarioCargoMil, concreta
 
 ==============================================================================
 2 - Identifique uma abstração que possa ser criada para melhorar os acoplamentos

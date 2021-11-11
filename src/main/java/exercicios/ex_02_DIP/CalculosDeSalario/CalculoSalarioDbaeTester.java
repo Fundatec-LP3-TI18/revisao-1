@@ -1,8 +1,8 @@
 package exercicios.ex_02_DIP.CalculosDeSalario;
 
-public class CalculoSalarioDbaeTester {
+public class CalculoSalarioDbaeTester implements CalculosDeSalario {
 
-    public double calcularSalariodbaeTester(double valorFinal){
+    public double calcular(double valorFinal){
        return valorFinal + (valorFinal * 0.3);
     }
 }

@@ -1,7 +1,9 @@
 package exercicios.ex_02_DIP.CalculosDeSalario;
 
-public class CalculoSalarioCargoMil {
-    public double calcularSalarioCargoMil(double valorFinal){
-        return valorFinal +100;
+public class CalculoSalarioCargoMil implements CalculosDeSalario {
+
+    public double calcular(double salario){
+        return salario + 100;
     }
+
 }
