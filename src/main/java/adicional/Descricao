@@ -1,0 +1,28 @@
+SRP e DIP
+
+==============================================================
+Após terminar a prova,
+o analista pediu que, ao final do calculo de frete
+envie um EMAIL para o cliente com o valor total final
+e tambem envie um SMS para o cliente com o valor total final
+
+Desafio:
+Botar essas duas funcionalidades nova na classe CalculadoraDeFrete
+adicionando apenas UMA nova dependencia (um novo acoplamento de classe)
+
+Dicas:
+// 1 - Interfaces (abstrações) podem ser guardadas dentro de listas
+// 2 - Padrão de projeto: Observer
+
+============================================================
+Fazer o sistema rodar:
+
+Criar uma classe cliente, que utilizará a classe CalculadoraDeFrete (classe Main)
+Teclado para escolher o tipo de frete
+Teclado para escolher o valor do produto
+
+1 - Criar a fabrica para criar a classe CONCRETA da interface (ABSTRAÇÃO) de calculo de Frete escolhido
+2 - new CalculadoraDeFrete
+
+
+

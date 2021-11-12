@@ -17,6 +17,12 @@ public class CalculadoraDeFrete {
             valorProduto = calculoFreteChina.calcular(valorProduto);
         }
 
+        System.out.println("=== ENVIANDO EMAIL ===");
+        System.out.println("O valor total foi de: " + valorProduto);
+
+        System.out.println("=== ENVIANDO SMS ===");
+        System.out.println("O valor total foi de: " + valorProduto);
+
         return valorProduto;
     }
 }

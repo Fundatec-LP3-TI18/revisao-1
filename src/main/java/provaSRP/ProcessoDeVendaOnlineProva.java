@@ -16,7 +16,11 @@ class ProcessoDeVendaOnlineProva {
             return new ImpostoDeImportado().calcula(valorOriginal);
 
         // Se nao for nenhum dos tipos permitidos, joga um erro
+
+
         throw new RuntimeException("Tipo de produto inválido");
+
+
     }
 }
 
