@@ -7,12 +7,12 @@ import static provaDIP.TipoFrete.*;
 
 public class CalculadoraDeFrete {
 
-    public Double calcula(Double valorProduto, TipoFrete tipoFrete, CalculoFreteChina calculoFreteChina) {
+    public Double calcula(Double valorProduto, TipoFrete tipoFrete, CalculoFreteCorreios correios, CalculoFreteChina calculoFreteChina) {
 
         if (FEDEX.equals(tipoFrete)) {
             valorProduto = valorProduto + 20;
         } else if (CORREIOS.equals(tipoFrete)) {
-            valorProduto = new CalculoFreteCorreios().calcular(valorProduto);
+            valorProduto = correios.calcular(valorProduto);
         } else if (CHINA.equals(tipoFrete)) {
             valorProduto = calculoFreteChina.calcular(valorProduto);
         }

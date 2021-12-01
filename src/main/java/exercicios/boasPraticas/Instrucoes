@@ -1,0 +1,16 @@
+1 - Crie os testes unitários para as classes
+    - EntregaService
+    - EntregaDeBicicleta
+
+2 - Aplicando a Lei de Demeter, o Tell don't ask e fazendo ajustes para eliminar a
+Intimidade Inapropriada, refatore a classe EntregaService.
+Obs: Comente o método calcularTempoDeEntrega original e crie o seu.
+
+3 - Teste unitariamente a classe pacote
+
+4 - Aplique o SRP na classe EntregaService
+
+5 - Aplique o DIP e o OCP na classe EntregaService
+
+6 - Crie a fábrica para escolha do tipo de entrega na ClasseMainExBP
+utilizando a HabilitacaoMoto do Entregador para fazer a escolha de qual estratégia fabricar

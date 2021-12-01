@@ -24,7 +24,6 @@ public class DIPMain {
         // Da venda
         VendaService venda = new VendaService(
             camisa,
-            cliente,
             promocao
         );
 
