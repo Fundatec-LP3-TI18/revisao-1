@@ -8,9 +8,11 @@ Obs: Comente o método calcularTempoDeEntrega original e crie o seu.
 
 3 - Teste unitariamente a classe pacote
 
-4 - Aplique o SRP na classe EntregaService
+4 - Aplique o SRP na classe EntregaService e transfira os testes para as respectivas classes
 
-5 - Aplique o DIP e o OCP na classe EntregaService
+5 - Aplique o DIP e o OCP na classe EntregaService e teste a classe com o mock da estratégia
 
 6 - Crie a fábrica para escolha do tipo de entrega na ClasseMainExBP
 utilizando a HabilitacaoMoto do Entregador para fazer a escolha de qual estratégia fabricar
+
+7 - Teste unitariamente a fábrica
