@@ -5,19 +5,22 @@ Resolva os desafios abaixo:
 ==============================================================================
 (0.5 ponto)
 
-1 - O que diz o princípio de Substituição de Liskov? (LSP) (Regra)
+1 - O que diz o princípio do Aberto Fechado e qual sua relação com o DIP? (OCP) (Regra)
 ...
 
-2 - O que diz o princípio de Segregação de Interface? (ISP) (Regra)
+2 - O que diz o princípio de Substituição de Liskov? (LSP) (Regra)
 ...
 
-3 - O que diz a regra do Tell Dont Ask?
+3 - O que diz o princípio de Segregação de Interface? (ISP) (Regra)
 ...
 
-4 - O que diz a lei de Demeter?
+4 - O que diz a regra do Tell Dont Ask?
 ...
 
-5 - Explique a Intimidade Inapropriada de uma classe com outra
+5 - O que diz a lei de Demeter?
+...
+
+6 - Explique a Intimidade Inapropriada de uma classe com outra
 ...
 
 ==============================================================================
