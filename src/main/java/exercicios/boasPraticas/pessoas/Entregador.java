@@ -8,7 +8,7 @@ public class Entregador {
     private String email;
     private String telefone;
 
-    private HabilitacaoMoto habilitacaoMoto;
+    public HabilitacaoMoto habilitacaoMoto;
 
     public Entregador(String nome, String email, HabilitacaoMoto habilitacaoMoto) {
         this.nome = nome;
@@ -22,5 +22,13 @@ public class Entregador {
 
     public HabilitacaoMoto getHabilitacaoMoto() {
         return habilitacaoMoto;
+    }
+
+    public boolean tuEntregaDeMoto() {
+        return habilitacaoMoto.tuEhValida();
+    }
+
+    public boolean tuEhValidoParaBicicleta() {
+        return "Sabino".equals(getNome());
     }
 }

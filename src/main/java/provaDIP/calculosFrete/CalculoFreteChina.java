@@ -1,6 +1,6 @@
 package provaDIP.calculosFrete;
 
-public class CalculoFreteChina {
+public class CalculoFreteChina implements CalculoFreteInterface {
 
     public Double calcular(Double valorOriginal){
         if(valorOriginal > 50) {

@@ -2,28 +2,31 @@ package provaDIP;
 
 import provaDIP.calculosFrete.CalculoFreteChina;
 import provaDIP.calculosFrete.CalculoFreteCorreios;
+import provaDIP.calculosFrete.CalculoFreteFedex;
+import provaDIP.calculosFrete.CalculoFreteInterface;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static provaDIP.TipoFrete.*;
 
 public class CalculadoraDeFrete {
 
-    public Double calcula(Double valorProduto, TipoFrete tipoFrete, CalculoFreteCorreios correios, CalculoFreteChina calculoFreteChina) {
+    // Subscribers -> Notificacoes
+    // Publishers -> CalculadoraDeFrete
+    public Double calculaComFamilia(Double valorProduto, CalculoFreteInterface familiaCalculo, List<NotificacaoInterface> listaDeNotificacao) {
 
-        if (FEDEX.equals(tipoFrete)) {
-            valorProduto = valorProduto + 20;
-        } else if (CORREIOS.equals(tipoFrete)) {
-            valorProduto = correios.calcular(valorProduto);
-        } else if (CHINA.equals(tipoFrete)) {
-            valorProduto = calculoFreteChina.calcular(valorProduto);
-        }
-
-        System.out.println("=== ENVIANDO EMAIL ===");
-        System.out.println("O valor total foi de: " + valorProduto);
-
-        System.out.println("=== ENVIANDO SMS ===");
-        System.out.println("O valor total foi de: " + valorProduto);
+        valorProduto = familiaCalculo.calcular(valorProduto);
+        notificarFimDeCalculo(valorProduto, listaDeNotificacao);
 
         return valorProduto;
     }
+
+    private void notificarFimDeCalculo(Double valorProduto, List<NotificacaoInterface> listaDeNotificacao) {
+        for (NotificacaoInterface notificacao : listaDeNotificacao){
+            notificacao.enviar(valorProduto);
+        }
+    }
+
 }
 

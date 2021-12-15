@@ -8,7 +8,8 @@ public class HabilitacaoMoto {
         this.valida = valida;
     }
 
-    public Boolean getValida() {
+    public Boolean tuEhValida() {
         return valida;
     }
+
 }

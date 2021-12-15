@@ -23,4 +23,12 @@ public class Pacote {
     public Double getMetrosCubicos() {
         return metrosCubicos;
     }
+
+    public boolean tuEhValidoParaMoto() {
+        return getMetrosCubicos() < 30d;
+    }
+
+    public boolean tuEhValidoParaBicicleta() {
+        return getPeso() < 100 && getMetrosCubicos() < 50d;
+    }
 }

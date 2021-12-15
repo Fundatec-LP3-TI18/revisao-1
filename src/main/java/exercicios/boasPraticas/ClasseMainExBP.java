@@ -15,10 +15,11 @@ public class ClasseMainExBP {
         Entregador entregador = new Entregador("Sabino", "sabino@teste", habilitacaoMoto);
         Cliente cliente = new Cliente("Bruna");
         Pacote pacote = new Pacote("Sushi", 20D, 20D);
-        EntregaDeBicicleta entregaDeBicicleta = new EntregaDeBicicleta();
+
+        CalculoEntregaInterface calculoEntregaEscolhido = FabricaDeFamiliaDeEntrega.criarCalculoDeEntrega(entregador);
 
         // Criando o serviço e mandando executar
-        EntregaService entregaService = new EntregaService(entregaDeBicicleta, entregador, cliente, pacote);
+        EntregaService entregaService = new EntregaService(calculoEntregaEscolhido, entregador, cliente, pacote);
         Double tempo = entregaService.calcularTempoDeEntrega();
 
         // Mostrando o tempo final no terminal
