@@ -1,0 +1,15 @@
+package provaSOLID.promocoes;
+
+import provaSOLID.CalculoProdutoInterface;
+
+public class BlackFriday implements CalculoProdutoInterface {
+    @Override
+    public Double aplicarPromocao(Double valorProduto) {
+        return valorProduto - (valorProduto * 0.70);
+    }
+
+    @Override
+    public Double aplicarImposto(Double valorProduto, Double porcentoTaxa) {
+        throw new RuntimeException("Não é um imposto!");
+    }
+}

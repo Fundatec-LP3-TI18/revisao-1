@@ -1,0 +1,54 @@
+Dependency Inversion (DIP)
+Princípio da Inversão de Dependência
+
+Resolva os desafios abaixo:
+==============================================================================
+(0.5 ponto)
+
+1 - O que diz o princípio de Substituição de Liskov? (LSP) (Regra)
+...
+
+2 - O que diz o princípio de Segregação de Interface? (ISP) (Regra)
+...
+
+3 - O que diz a regra do Tell Dont Ask?
+...
+
+4 - O que diz a lei de Demeter?
+...
+
+5 - Explique a Intimidade Inapropriada de uma classe com outra
+...
+
+==============================================================================
+(1.5 ponto)
+
+Sabendo que a interface CalculoProdutoInterface está com mais de uma responsabilidade
+forçando as classes que a usam a utilizar um método que não desejam,
+assim quebrando o ISP.
+
+Também sabendo que ICSM, IOF, BlackFriday e DiaDasCrianças estão sendo obrigadas a utilizar esses
+métodos, executando um processo que não condiz com suas competências, e então quebram o LSP pois
+não poderemos substituir os individuos da família e nem a classe principal se estivessemos fazendo uma herança.
+
+1 ----
+1.1 - Execute a classe Entrada, preste bastante atenção no erro e nos parâmetros
+da classe VendaService. Descreva aqui, o porque ocorreu o erro:
+...
+
+1.2 - Segregue as famílias (interfaces) corretamente em suas regras de negócio/responsabilidades. (ISP)
+
+1.3 - Aplique as famílias corretas em suas classes e remova os comportamentos indesejados (LSP)
+
+1.4 - Ajuste os atributos e os parâmetros do construtor da classe VendaService para que ela receba corretamente as famílias.
+
+1.4 - Veja a classe Entrada quebrar pois o VendaService não aceitará apenas uma família para os dois parâmetros,
+então envie os parâmetros corretos para ajustar a classe Entrada.
+Ajuste até que o programa funcione corretamente retornando o resultado de calculo do produto.
+
+2 ----
+2.1 - Teste unitariamente as classes de impostos
+2.2 - Teste unitariamente as classes de promoções
+2.3 - Teste unitariamente a classe VendaService
+
+
